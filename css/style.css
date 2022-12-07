@@ -311,8 +311,78 @@ hr {
 .catalog-content {
     display: flex;
     justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+    margin-bottom: 50px;
 
 }
+
+.game {
+    padding: 5px;
+    position: relative;
+}
+.game::before {
+    content:"";
+    position:absolute;
+    width:107%;
+    height:102%;
+    top:-2%;
+    left:-5%;
+    border:1px solid #e91e63;
+}
+
+.game::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:-2%;
+    width:107%;
+    height:102%;
+    border:1px solid #2196f3;
+}
+
+.game:hover::before {
+    animation: toright 3s infinite;
+}
+
+.game:hover::after {
+    animation: toleft 3s infinite;
+    
+}
+
+@keyframes toright {
+    0%{
+
+    }
+    30%{
+        margin-left: 5%;
+    }
+    70%{
+        margin-left: -2%;
+    }
+    100%{
+        margin-left: 0;
+    }
+
+}
+
+@keyframes toleft {
+    0%{
+
+    }
+    30%{
+        margin-left: -5%;
+    }
+    70%{
+        margin-left: 2%;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+
+
+
 
 .game > img {
     height: 300px;
