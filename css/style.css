@@ -411,15 +411,18 @@ footer > p {
 }
 
 .footer-icon > img{
-    filter: brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(421%) hue-rotate(246deg) brightness(116%) contrast(82%);
+    /* filter: brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(421%) hue-rotate(246deg) brightness(116%) contrast(82%); */
+    filter: brightness(0) saturate(100%) invert(31%) sepia(89%) saturate(5457%) hue-rotate(327deg) brightness(92%) contrast(98%);
     opacity: 0.8;
     margin-left: 20px;
     margin-right: 20px;
     height: 50px;
+    transition: 0.2s linear;
 }
 
 .footer-icon > img:hover{
-    filter: brightness(0) saturate(100%) invert(54%) sepia(11%) saturate(13%) hue-rotate(7deg) brightness(97%) contrast(88%);
+    /* filter: brightness(0) saturate(100%) invert(54%) sepia(11%) saturate(13%) hue-rotate(7deg) brightness(97%) contrast(88%); */
+    filter: brightness(0) saturate(100%) invert(49%) sepia(62%) saturate(663%) hue-rotate(166deg) brightness(93%) contrast(105%);
 }
 
 /* CONTACT */
