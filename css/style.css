@@ -13,7 +13,7 @@ body {
 
 :root {
     --primary-color: transparent;
-    --overlay-color: #2196f380;
+    --overlay-color: #2195f3f1;
     --menu-speed: 0.5s;
     --menu-width: 300px;
   }
@@ -91,6 +91,12 @@ a:hover {
 
 /* NAV */
 
+.logo {
+    width: 100px;
+    margin: auto;
+    margin-top: -40px;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -99,7 +105,6 @@ a:hover {
     border-right:2px solid #e91e63;
     width: var(--menu-width);
     height: 100vh;
-    /* overflow: hidden; */
     font-size: 30px;
 }
 
@@ -134,9 +139,8 @@ hr {
     border: 1px solid #e91e63;
 }
 
-/* NAVBAR */
+/* MOBILE NAV */
 
-/* MENU STYLES */
 .menu-wrap {
     display: none;
     position: fixed;
@@ -278,14 +282,6 @@ hr {
     text-decoration: none;
     transition: color 0.4s ease;
   }
-  
-  
-
-/* GO UP */
-
-.go-up {
-    display: none;
-}
 
 /* DASHBOARD */
 
@@ -324,38 +320,6 @@ hr {
     height: 300px;
 }
 
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 1080px) {
-    nav {
-        display: none;
-    }
-    .menu-wrap {
-        display: block;
-    }
-    
-    .main-container {
-        margin-left: 0;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .glitch {
-        font-size: 15vw;
-    }
-
-    .go-up {
-        display: block;
-        position: fixed;
-        top: 70vh;
-        left: 80vw;
-    }
-    
-    .go-up > img {
-        width: 70px;
-        filter: brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(421%) hue-rotate(246deg) brightness(116%) contrast(82%);
-    }
-}
 
 /* FOOTER */
 footer {
@@ -363,13 +327,14 @@ footer {
     border-top:2px solid #e91e63;
     background: black;
     padding-top: 30px;
-    padding-left: 300px;
+    margin-left: 300px;
     height: 150px;
 }
 
 .icons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
+    left: var(--menu-width);
 }
 
 footer > p {
@@ -380,7 +345,8 @@ footer > p {
 .footer-icon > img{
     filter: brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(421%) hue-rotate(246deg) brightness(116%) contrast(82%);
     opacity: 0.8;
-
+    margin-left: 20px;
+    margin-right: 20px;
     height: 50px;
 }
 
@@ -473,4 +439,46 @@ header {
     border:2px solid #e91e63;
     cursor: pointer;
     
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1080px) {
+    nav {
+        display: none;
+    }
+    .menu-wrap {
+        display: block;
+    }
+    
+    .main-container {
+        margin-left: 0;
+    }
+
+    .main-content {
+        width: 80%;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .glitch {
+        font-size: 15vw;
+    }
+
+    .go-up {
+        display: block;
+        position: fixed;
+        top: 70vh;
+        left: 80vw;
+    }
+    
+    .go-up > img {
+        width: 70px;
+        filter: brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(421%) hue-rotate(246deg) brightness(116%) contrast(82%);
+    }
 }
