@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+/* GLITCH EFFECT */
+ 
+.glitch {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12vw;
+    letter-spacing: 8px;
+    cursor: pointer;
+}
+
+.glitch::before, .glitch::after {
+    content: 'CLICK';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+.glitch:hover::before {
+    animation: glitch 0.3s linear infinite;
+    color: #e91e63;
+    z-index: -2;
+}
+  
+.glitch:hover::after {
+    animation: glitch 0.3s linear infinite reverse;
+    color: #2196f3;
+    z-index: -1;
+}
+  
+@keyframes glitch {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    20% {
+      top: -5px;
+      left: -5px;
+    }
+    40% {
+      top: 5px;
+      left: 5px;
+    }
+    60% {
+      top: -5px;
+      left: 5px;
+    }
+    80% {
+      top: 5px;
+      left: -5px;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+}  
+
+/* OTHER */
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 720px) {
+    .glitch {
+        font-size: 15vw;
+    }
+}
