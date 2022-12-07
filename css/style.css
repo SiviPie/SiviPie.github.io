@@ -287,7 +287,7 @@ hr {
 
 .main-container {
     min-height:calc(100vh - 150px);
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-left: var(--menu-width);
 }
 
@@ -309,8 +309,6 @@ hr {
 
 /* CATALOG */
 .catalog-content {
-    margin-left: 300px;
-    width: calc(100% - 300px);
     display: flex;
     justify-content:space-around;
 
@@ -437,8 +435,12 @@ header {
 
 .form-button:hover {
     border:2px solid #e91e63;
-    cursor: pointer;
-    
+    cursor: pointer;   
+}
+
+iframe {
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 /* MEDIA QUERIES */
