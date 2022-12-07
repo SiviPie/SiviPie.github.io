@@ -11,11 +11,11 @@
     <nav>
         <div class="sidebar">
             <div class="nav-list">
-                <a href="dashboard.html" class="nav-button">Acasa</a>
+                <a href="home.html" class="nav-button">Acasa</a>
                 <hr>
                 <a href="about.html" class="nav-button">Despre</a>
                 <hr>
-                <a href="portfolio.html" class="nav-button">Portofoliu</a>
+                <a href="catalog.html" class="nav-button">Catalog</a>
                 <hr>
                 <a href="contact.html" class="nav-button">Contact</a>
                 <hr>
@@ -23,5 +23,50 @@
             </div>
         </div>
     </nav>
+    <main>
+        <div class="main-container">
+            <h1>CONTACT</h1>
+            <div class="contact-content">
+                <form action="mailto:silvia.silivestru@stud.acs.upb.ro" method="post" enctype="text/plain">
+                    <div>
+                        <label for="name"> Name: 
+                            <input type="text" name="name" id="name" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">Email: <input type="text" name="email" id="email" /></label>
+                    </div>
+                    <div>
+                        <label for="subject">Subject: <input type="text" name="subject" id="subject" /></label>
+                    </div>
+                    <label>Gender: </p>
+                    <div class="gender">
+                        
+                    <input type = "radio" id = "female" name = "gender" value = "female">
+                    <label for = "female">Female</label>
+                    <input type = "radio" id = "male" name = "gender" value = "male">
+                    <label for = "male">Male</label>
+                    <input type = "radio" id = "other" name = "gender" value = "other">
+                    <label for = "other">Other</label>
+                    </div>
+                    <div><label>Message: </label>
+                        <textarea name="body" id="body" cols="25" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input class="form-button" type="submit" name="submit" value="Send" />
+                        <input class="form-button" type="reset" name="reset" value="Clear form" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com/sivipie/" target="_blank" class="footer-icon"><img src="../img/facebook.svg" alt="facebook"></a>
+            <a href="https://twitter.com/sivipie_" target="_blank" class="footer-icon"><img src="../img/twitter.svg" alt="twitter"></a>
+            <a href="mailto:sivipie@yahoo.com" class="footer-icon"><img src="../img/email.svg" alt="email"></a>
+        </div>
+        <p>©2022</p>
+    </footer>
 </body>
 </html>
