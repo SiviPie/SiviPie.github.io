@@ -310,6 +310,11 @@ hr {
     padding: 30px;
 }
 
+.main-content > p {
+    margin-top: 60px;
+    background: #00000070;
+}
+
 
 /* CATALOG */
 .catalog-content {
@@ -325,6 +330,7 @@ hr {
     padding: 5px;
     position: relative;
 }
+
 .game::before {
     content:"";
     position:absolute;
@@ -392,7 +398,6 @@ hr {
 
 /* FOOTER */
 footer {
-    
     border-top:2px solid #e91e63;
     background: black;
     padding-top: 30px;
@@ -430,7 +435,6 @@ footer > p {
 
 .content-contact {
     width: calc(100% - 300px);
-    
 }
 
 form {
@@ -442,7 +446,6 @@ form {
     align-items: center;
     flex-direction: column;
     margin-bottom: 30px;
-    
 }
 div > label {
     position: relative;
