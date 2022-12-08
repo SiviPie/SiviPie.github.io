@@ -8,13 +8,10 @@ Am ales tema Online Magazine, astfel că am realizat un website folosind HTML ş
 
 Fişierele sunt structurate în următoarea ierarhie:
 
-index.html
-/css -> style.css
-/img -> toate imaginile si svg-urile conţinute
-/pages -> home.html
-       -> about.html
-       -> catalog.html
-       -> contact.html
+* index.html
+* /css -> style.css
+* /img -> toate imaginile si svg-urile conţinute
+* /pages -> home.html, about.html, catalog.html, contact.html
 
 ## Landing Page
        
