@@ -264,8 +264,8 @@ hr {
   
   .menu-wrap .menu > div > div {
     text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
+    /* max-width: 90vw; */
+    /* max-height: 100vh; */
     opacity: 0;
     transition: opacity 0.4s ease;
   }
@@ -298,9 +298,13 @@ hr {
 }
 
 .main-content {
+    background: url(../img/joystick.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y:auto;
     border:2px solid #e91e63;
     margin: auto;
-    width: 50%;
+    width: 60%;
     height: 500px;
     font-size: 50px;
     padding: 30px;
@@ -380,9 +384,6 @@ hr {
         margin-left: 0;
     }
 }
-
-
-
 
 .game > img {
     height: 300px;
@@ -473,7 +474,8 @@ div > input {
 }
 div > textarea {
     position: relative;
-    width: 30vw;
+    width: 80%;
+    margin-left:10%;
     height: 200px;
     font-size: 1.25rem;
 }
@@ -491,7 +493,7 @@ header {
 }
 
 .gender > input {
-    display: inline;
+    /* display: inline; */
     width: 50px;
 }
 
@@ -501,7 +503,9 @@ header {
 
 .form-button {
     background:#2196f3;
+    padding: 2px;
     margin: auto;
+    min-width: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -538,22 +542,22 @@ iframe {
         margin-left: 0;
     }
 
+    form {
+        width: 80%; 
+    }
+
+    iframe {
+        width: 60%;
+    }
+
 }
 
 @media screen and (max-width: 720px) {
     .glitch {
         font-size: 15vw;
     }
-
-    .go-up {
+    .gender > input {
         display: block;
-        position: fixed;
-        top: 70vh;
-        left: 80vw;
     }
-    
-    .go-up > img {
-        width: 70px;
-        filter: brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(421%) hue-rotate(246deg) brightness(116%) contrast(82%);
-    }
+
 }
